@@ -1,0 +1,138 @@
+/*phones, less than 768px*/
+.searchWeather_container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.searchWeather_input {
+  margin-left: 10px; 
+  margin-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 12pt;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.85); 
+}
+
+.searchWeather_button {
+  margin: auto 10px auto auto;
+  height: 35px;
+  width: 65px;
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: gray;
+  background: white;
+}
+
+.infoWeather_container {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.infoWeather_icon_container {
+  margin-left: 10px;
+  color: grey;
+  display: flex;
+}
+
+img.infoWeather_icon {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.infoWeather_text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.infoWeather_weatherInfo {
+  font-size: 10pt;
+}
+
+.infoWeather_cityName {
+  font-size: 11pt;
+  font-weight: bold;
+  color: grey;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+.infoWeather_isEmpty {
+  color: grey;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 60px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.infoWeather_isEmpty_text {
+  margin: auto;
+  font-size: 12pt;
+  font-family: sans-serif;
+}
+
+/*tablet, 768px and up*/
+@media (min-width: 768px) {
+  .infoWeather_container {
+    height: 60px;
+    justify-content: space-around;
+  }
+
+  .infoWeather_isEmpty {
+    height: 60px;
+  }
+
+  .infoWeather_isEmpty_text {
+    font-size: 14pt;
+  }
+
+  .infoWeather_icon_container {
+    order: 1;
+  }
+}
+
+/*desktop, 992px and up*/
+@media (min-width: 992px) {
+  .topBar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchWeather_container,
+  .infoWeather_isEmpty,
+  .infoWeather_container {
+    align-self: center;
+    width: 768px;
+  }
+
+  .searchWeather_input {
+    margin-left: 0;
+  }
+
+  .searchWeather_button {
+    margin-right: 0;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  .infoWeather_container {
+    border-radius: 5px;
+  }
+}
